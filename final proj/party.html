@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <center><h1>Welcome to Party hall</h1></center> 
+  <center><img src="party.jpg" alt="" height="500px" width="1000px" ></center> 
+<br><br>
+<center><div class="party"> Set in Kanchipuram, NEW Railway station Under next the bridge, Welcome Visitor Hall offers air-conditioned rooms and a terrace. All rooms feature a flat-screen TV with satellite channels and a private bathroom. The accommodation features room service and a 24-hour front desk for guests.</div>
+<div class="form-container">
+    <h1>Event Booking</h1>
+    <form id="bookingForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit" id="submitBtn" class="submit-btn">Submit</button>
+    </form>
+</center>
+
+</div>
+
+<script>
+    // Adding form submission event
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        // Capture form data
+        const name = document.getElementById('name').value;
+        const date = document.getElementById('date').value;
+
+        // Show confirmation message with animation
+        const confirmationMessage = document.getElementById('confirmationMessage');
+        confirmationMessage.classList.add('show');
+        setTimeout(() => {
+            confirmationMessage.classList.remove('show');
+        }, 3000); // Hide after 3 seconds
+
+        // Reset the form
+        document.getElementById('bookingForm').reset();
+    });
+</script>
+</body>
+</html>

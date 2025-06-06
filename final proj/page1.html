@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/st1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="logo"><a href="home.html"><img src="logo.png" width="150px" height="150px"> </a> </div><br>
+
+     <div class="booking-container">
+        <h1>Room Booking</h1>
+        <form action="submit.php" method="POST" id="bookingForm" onsubmit="return validateForm()">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="roomtype">Room Type:</label><br>
+            <select id="roomtype" name="roomtype" required>
+                <option value="single">Single bed</option>
+                <option value="double">Double bed</option>
+            </select><br>
+
+            <label for="checkinDate">Check-in Date:</label>
+            <input type="date" id="checkindate" name="checkindate" required>
+<br>
+            <label for="checkInTime">Check-in Time:</label>
+            <input type="time" id="checkintime" name="checkintime" required>
+<br>
+            <button type="submit">Book Room</button>
+        </form>
+        <p id="errorMessage" class="error"></p>
+    </div>
+
+    <script>
+        // JavaScript function for form validation
+        function validateForm() {
+            // Clear previous error message
+            document.getElementById("errorMessage").innerHTML = "";
+
+            // Get form valu es
+            var name = document.getElementById("name").value;
+            var roomType = document.getElementById("roomType").value;
+            var checkInDate = document.getElementById("checkInDate").value;
+            var checkInTime = document.getElementById("checkInTime").value;
+
+            // Check if all fields are filled
+            if (name == "" || roomType == "" || checkInDate == "" || checkInTime == "") {
+                document.getElementById("errorMessage").innerHTML = "All fields are required!";
+                return false;  // Prevent form submission
+            }
+
+            // Additional validation could go here (e.g., date/time checks)
+
+            alert("Room successfully booked for " + name + "!");
+            return true;  // Allow form submission
+        }
+    </script>
+    
+</center>
+</body>
+</html>

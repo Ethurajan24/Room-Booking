@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+<div class="head"><p><b>Welcome Visitors <p1>#1</b></p1></p> <br><p2><h1>Restaurant</h1></p2>  </div>
+
+
+<div class="img"><img src="logo.png" width="150px" height="150px"></div>
+<div class="sign"><a href="index.php"><img src="si.png" height="200px" width="200px"  alt=""></a></div>
+
+    <div class="cat"><h2>
+  <nav> 
+  <nav>&nbsp;  
+   
+<a href="home.html" >Home</a>&nbsp; &nbsp;
+<a href="bo.php" >Booking</a>&nbsp; &nbsp;
+<a href="party.html" >Party Hall</a>&nbsp; &nbsp;
+<a href="Ent.html" >Entertainment</a>&nbsp; &nbsp;
+<a href="about.html" >About</a>&nbsp; &nbsp;
+</h2>         
+</nav>
+
+</div>
+<br><br>
+
+<div class="slideshow-container">
+   <div class="mySlides fade">
+     <div class="numbertext"></div>
+     <center><img src="slide4.avif" style="width:800px" height="400px"></center>
+     <div class="text">Food</div>
+   </div>
+   
+   <div class="mySlides fade">
+     <div class="numbertext"></div>
+     <center><img src="sand.webp" style="width:800px" height="400px"></center>
+     <div class="text">Rooms</div>
+   </div>
+   
+   <div class="mySlides fade">
+     <div class="numbertext"></div>
+     <center><img src="slide1.jfif" style="width: 800px" height="400px"></center>
+     <div class="text">Dining Hall</div>
+   </div>
+   
+   <a class="prev" onclick="plusSlides(-1)">❮</a>
+   <a class="next" onclick="plusSlides(1)">❯</a>
+   
+   </div>
+   <br>
+   
+   <div style="text-align:center">
+     <span class="dot" onclick="currentSlide(1)"></span> 
+     <span class="dot" onclick="currentSlide(2)"></span> 
+     <span class="dot" onclick="currentSlide(3)"></span> 
+   </div>
+   
+   <script>
+   let slideIndex = 1;
+   showSlides(slideIndex);
+   
+   function plusSlides(n) {
+     showSlides(slideIndex += n);
+   }
+   
+   function currentSlide(n) {
+     showSlides(slideIndex = n);
+   }
+   
+   function showSlides(n) {
+     let i;
+     let slides = document.getElementsByClassName("mySlides");
+     let dots = document.getElementsByClassName("dot");
+     if (n > slides.length) {slideIndex = 1}    
+     if (n < 1) {slideIndex = slides.length}
+     for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+     }
+     for (i = 0; i < dots.length; i++) {
+       dots[i].className = dots[i].className.replace(" active", "");
+     }
+     slides[slideIndex-1].style.display = "block";  
+     dots[slideIndex-1].className += " active";
+   }
+   </script>   <div class="ol">
+   <div class="cant">
+      
+ 
+  </div>
+<br>  <div class="cant">
+      
+    
+  </div><br>
+    <div class="cant">
+      
+    
+  </div><br>
+      
+    
+  <div class="cant">
+      
+    
+  </div><br>
+  <div class="cant">
+      
+    
+  </div>
+
+  <br><br><br> <br> <br>
+<div class="p1">
+  <h2>BOOK YOUR ROOMS THEN FEEL FREE</h2>
+ &nbsp; &nbsp; &nbsp; Here, if you book room via online. you can book rooms  24/7, 
+   if you are a foreigner<br>   we have a staff  to explain in your language. 
+   We have online payment,offline payment<br> option and also  credit cards. 
+</div>
+<br>
+   <div class="conf">
+    <img src="conf.png" height="300px" width=500px">
+   </div>
+   <div class="p2">
+    <h2>CANCEL THE BOOKING </h2>
+    &nbsp; &nbsp; You can also cancel the booking as per your plan changes. By select <br> "My rooms" you can see the cancel option.
+
+ 
+   </div>
+   <div class="cans">
+    <img src="can.png" alt="" height="300px " width="300px">
+   </div>
+ <div class="pic">
+  <h2>A PLEASENT AND CLEANING LODGE</h2>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Every 12 hrs, Our Staffs Clean and Maintain Your Rooms. You Can Call For  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our Service In Tele Phone Form Your Room.<br><br>
+  <img src="bedroom.avif" height="400px" weight="500px">
+ </div>
+
+
+
+</body>
+</html>

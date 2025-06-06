@@ -1,0 +1,7 @@
+Hello everyone!!!
+
+1. To open and run this program, you must need to install a xampp. Because which helps to connect php to sql code.
+2. After the installation turn on the server.
+3. Then select the "home.php" or "home.html" file.
+
+Thank you. 

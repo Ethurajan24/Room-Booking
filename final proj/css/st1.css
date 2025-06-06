@@ -1,0 +1,58 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color: #F5F5DC;
+    display: flex;
+    
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.logo{
+    filter:drop-shadow(2px 4px 3px #70702c) ;
+    margin-top: -750px;
+ 
+}
+.booking-container {
+    margin-left: 600px;
+    background-color: #DCE4C9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+h1 {
+    color: #333;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #555;
+}
+select, input[type="date"], input[type="time"], input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #218838;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -10px;
+}

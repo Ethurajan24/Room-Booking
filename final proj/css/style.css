@@ -1,0 +1,275 @@
+
+body{
+    background-color:#F5F5DC;
+    
+}
+.head p{
+  margin-left: 200px;
+  text-align: center;
+    font-size: 40px;
+  color: rgb(14, 5, 5);
+  
+  font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  } 
+  .head h1{
+
+    margin-top: -60px;
+    margin-left: 865px;
+    color: rgb(184, 48, 48);
+    font-style: italic;
+  }
+
+
+.head p1{
+  margin-left: 10px;
+  font-style: italic;
+  color: rgb(184, 48, 48);
+  font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  
+}
+
+ .img{
+  top: 500px;
+  left: 500px;
+  margin-top: -150px;
+  margin-left:700px ;
+  filter:drop-shadow(2px 4px 3px #70702c) ;
+ 
+ 
+   animation-name: img;
+   animation-duration: 2s;
+   
+ }
+
+ @keyframes img {
+   0%{background-position: -1;
+     opacity: 0%;
+   }
+   50%{background-position: -1;
+     opacity: 1%;
+   }
+   100%{background-position: -1;
+     opacity: 100%;
+   }
+ 
+ }
+.cat {
+  margin-left: 600px;
+   height: 35px;
+   width: 700px;
+   border-radius: 5px;
+   filter:drop-shadow(2px 3px 1px #70702c) ;
+   border-style:  #E07B39;
+ background:#E07B39 ;
+}
+.sign{
+  text-align: right;
+  margin-top: -200px;
+  filter:drop-shadow(2px 4px 3px #70702c) ;
+}
+.cat a{
+  font-family:  -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #E07B39;
+  border: none;
+  font-size: 25px;
+  padding-bottom: 0;
+  top: 4px;
+  color: #F5F5DC;
+  margin-bottom: 100px;
+  
+}
+.cat a:link {
+  background-color: #E07B39;
+  text-decoration: none;
+  color: #F5F5DC;
+  border: none;
+}
+
+.cat a:visited {
+  text-decoration: none;
+  color: #F5F5DC;
+}
+
+.cat a:hover {
+  color: #ffffff ;
+  
+}
+
+.cat a:active {
+  color: #ffffff ;
+  
+  
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+ 
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #E07B39;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease-in-out;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-top: -35px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  color: #E07B39;
+  margin-right: 500px;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #717171;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  margin-top: -50px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: progress;
+  height: 3px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #E07B39;
+  border-radius: 5%;
+  display: inline-block;
+  transition: background-color 0s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 0.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.cant{
+  background-attachment: fixed;
+  margin-top: -00px;
+  width: 100px;
+  height: 50px;
+  background-color: #E07B39;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius:50px ;
+  transition: transform 0.1s ; 
+}
+
+.cant:hover{
+ 
+  transform: scaleX(2.2) ;
+  
+
+}
+.ol{
+  margin-top: -400px;
+}
+.cantt{
+  justify-items: end;
+  background-attachment: fixed;
+  margin-top: -00px;
+  width: 100px;
+  height: 50px;
+  background-color: #E07B39;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius:50px ;
+  transition: transform 0.1s ; 
+}
+
+.cantt:hover{
+ 
+  transform: scaleX(2.2) ;
+  
+
+}
+.on{
+  margin-top: -380px;
+}
+.p1{
+  display: inline-block;
+  margin-left: 250px;
+color:#000000;
+
+  display: inline-block;
+  margin-left: 250px;
+}
+.conf{
+  margin-left: 250px ;
+}
+.p2{
+  margin-left: 1050px ;
+}
+.cans{
+  margin-top: -50px;
+  margin-left: 1200px;
+}
+.pic img{
+
+margin-left: 300px;
+}
+.pic h2{
+  margin-left: 250px;
+}
+.party{
+  margin-left: 450px;
+  margin-right: 450px;
+}
+
+
+
+
+

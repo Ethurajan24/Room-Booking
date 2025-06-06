@@ -1,0 +1,77 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #DCE4C9; /* Light background to balance the peach tones */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+  }
+  
+  /* Floor Styles - Now Light Peach */
+  .floor {
+    margin-bottom: 40px;
+    background-color: #E07B39; /* Light Peach Background for floors */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #F5F5DC; /* Black color for headings */
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif; /* Elegant serif font for the title */
+  }
+  
+  .rooms {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  /* Room Styles */
+  .room {
+    background-color: #F5F5DC; /* Regular Peach background for rooms */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #2C3E50; /* Black text for better contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .room .icon {
+    font-size: 40px;
+    color: #E07B39; /* Black bed icon */
+    margin-bottom: 10px;
+  }
+  
+  .room span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .room:hover {
+    background-color: #DCE4C9; /* Light peach for hover effect */
+    cursor: pointer;
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  
+  .room:active {
+    transform: translateY(0); /* Neutralize lift when clicked */
+  }
+  
+  /* Make sure links don't have underlines in case you want to add links */
+  a {
+    text-decoration: none;
+  }
+  
